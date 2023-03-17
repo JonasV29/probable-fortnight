@@ -1,28 +1,31 @@
-#fazendo código em python
-import math #importando uma biblioteca matemática
+#code in Pyhton
 
-def conta(a, b):   #estou declarando uma função para se fazer uma conta matemática, de adição , multiplicação
-     s= a + b        # e de divisão e subtração
-     print(s)
+                         
+class Calculator:         #This calculator was made by a  Calculator class
 
+    def __init__(self,num1, num2):           #Calculator class calculates numbers with mathematics accounts
+        self.value_1 = num1
+        self.value_2 = num2
 
-def multi(c, d):     #então assim que declara a função, no final eu escolho as variáveis e da o resultado final
-    y = c* d
-    print(y)
+    def sum(self):   
+        return  self.value_1 + self.value_2       
+        
 
-
-def div(m, n):
-    z= m/ n
-    print(z)
-
-
-def dim(f, g):
-    x= f-g
-    print(x)
+    def dim(self):     
+        return self.value_1 - self.value_2
 
 
-conta(2, 8)
-multi(5, 7)
-div(10, 5)
-dim(34, 30) 
+    def multi(self):
+        return self.value_1 * self.value_2
+
+
+    def div(self):
+        return self.value_1 / self.value_2
+
+calculator = Calculator(10, 2)
+print('The sum was: {}'.format(calculator.sum()))
+print('The reduction was: {}'.format(calculator.dim()))
+print('The multiplication was: {}'.format(calculator.multi()))
+print('The division was: {}'.format(calculator.div()))
+
 
