@@ -22,7 +22,7 @@ class Calculator:         #This calculator was made by a  Calculator class
     def div(self):
         return self.value_1 / self.value_2
 
-calculator = Calculator(10, 2)
+calculator = Calculator(5, 10)
 print('The sum was: {}'.format(calculator.sum()))
 print('The reduction was: {}'.format(calculator.dim()))
 print('The multiplication was: {}'.format(calculator.multi()))
