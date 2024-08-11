@@ -1,4 +1,3 @@
-
 class automovel:
     def __init__(self, roda, marca):
       self.roda = roda
